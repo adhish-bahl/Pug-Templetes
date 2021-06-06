@@ -12,7 +12,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
     let param = {title: "Home"};
-    res.status(200).render("templete.pug", param);
+    res.status(200).render("index.pug", param);
 });
 
 // app.post("/register", (req, res) => {
