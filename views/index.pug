@@ -2,6 +2,16 @@ extends templete.pug
 
 block css
     style 
-        //- include ../static/styles.css
+        include ../static/styles.css
         include ../static/navfoot.css
+
+block content 
+    section.gallery 
+        p This is the gallery section
+
+    section#sponsors
+        p This is the sponsor section
+
+    section 
+        p This is the details  section
 
