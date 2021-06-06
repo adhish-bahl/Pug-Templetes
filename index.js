@@ -11,13 +11,12 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
-    const title = "Home";
-    res.status(200).render("index.pug", title);
+    let param = {title: "Home"};
+    res.status(200).render("templete.pug", param);
 });
 
-app.post("/register", (req, res) => {
-
-});
+// app.post("/register", (req, res) => {
+// });
 
 app.listen(port, () => {
     console.log(`Server has been started at port ${port}`);

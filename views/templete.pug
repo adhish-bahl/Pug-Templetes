@@ -3,14 +3,17 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title= title 
+        block css
+        title= tit
     body 
         nav.navigation
             ul.no-bullets 
                 li #[a(href="/") Home] 
-                li #[a(href="/") Home] 
-                li #[a(href="/") Home] 
-                li #[a(href="/") Home] 
+                li #[a(href="/register") Register] 
+                li #[a(href="/#sponsors") Sponsors] 
+                li #[a(href="/#footer") Contact Us] 
         block content 
-        footer.footer 
-            |All rights reserved ©Adhish Dance Academy 2020
+        footer.footer#footer 
+            p Contact us at e-mail: support@adhishdance.com 
+            p You can also contact us on number +91 96457230.
+            p All rights reserved ©Adhish Dance Academy 2020
