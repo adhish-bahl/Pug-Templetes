@@ -1,0 +1,11 @@
+section {
+    height: 700px;
+    border: 1px solid rgb(16, 16, 80);
+}
+
+.gallery {
+    background-image: url("/static/dance.jpg");
+    background-size: cover;
+    /* opacity: .5; */
+    /* background: "dance.jpg" cover/center center; */
+}
