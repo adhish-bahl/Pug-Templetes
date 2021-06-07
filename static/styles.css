@@ -17,7 +17,7 @@ section {
 #sponsors::before {
     background-image: url(../static/dancing2.jpg);
     background-size: cover;
-    opacity: .6;
+    opacity: .4;
     z-index: -1;
     width: 100%;
     height: inherit;
@@ -58,4 +58,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.logocontainer {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.logo{
+    width: 120px;
+    margin: 15px 30px;
 }
