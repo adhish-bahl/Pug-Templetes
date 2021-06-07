@@ -29,6 +29,7 @@ section {
     background-image: url(../static/dance3.jpg);
     background-size: cover;
     opacity: .7;
+    z-index: -1;
     width: 100%;
     height: inherit;
     position: absolute;
