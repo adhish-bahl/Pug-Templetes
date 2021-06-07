@@ -8,6 +8,10 @@ section {
     background-size: cover;
     /* opacity: .5; */
     /* background: "dance.jpg" cover/center center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #sponsors::before {
@@ -35,7 +39,7 @@ section {
     font-size: 3rem;
     text-align: center;
     color: rgb(235, 235, 226);
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .small {
@@ -47,4 +51,11 @@ section {
 
 .slarge {
     color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+#sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
