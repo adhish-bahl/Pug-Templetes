@@ -1,5 +1,5 @@
 section {
-    height: 700px;
+    height: 500px;
     border: 1px solid rgb(16, 16, 80);
 }
 
@@ -8,4 +8,27 @@ section {
     background-size: cover;
     /* opacity: .5; */
     /* background: "dance.jpg" cover/center center; */
+}
+
+#sponsors {
+}
+
+#sponsors::before {
+    background-image: url(../static/dancing2.jpg);
+    background-size: cover;
+    opacity: .6;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    content: "";
+}
+
+.details::before {
+    background-image: url(../static/dance3.jpg);
+    background-size: cover;
+    opacity: .7;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    content: "";
 }
