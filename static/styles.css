@@ -72,3 +72,9 @@ section {
     width: 120px;
     margin: 15px 30px;
 }
+
+.sty {
+    color: white;
+    margin: 0%;
+    list-style: none;
+}
