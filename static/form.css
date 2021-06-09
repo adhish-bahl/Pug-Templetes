@@ -1,3 +1,8 @@
+.{
+    outline: none;
+    border: black 1px solid;
+}
+
 .form input, .form textarea {
     display: block;
     width: 40vw;
@@ -16,6 +21,7 @@
     border: black 1px solid;
     padding: 30px;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 h1, h3 {
@@ -29,4 +35,16 @@ h1 {
 
 h3 {
     margin-top: 0%;
+}
+
+.form button {
+    text-align: center;
+    padding: 6px;
+    margin: 8px;
+    border-radius: 10px;
+    width: 10vw;
+}
+
+.form textarea {
+    height: 6rem;
 }
