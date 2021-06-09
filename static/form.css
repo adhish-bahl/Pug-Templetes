@@ -1,6 +1,10 @@
 .form input, .form textarea {
     display: block;
     width: 40vw;
+    text-align: center;
+    padding: 6px;
+    margin: 8px;
+    border-radius: 10px;
 }
 
 .form {
@@ -11,4 +15,18 @@
     margin: 20px 23vw;
     border: black 1px solid;
     padding: 30px;
+    border-radius: 10px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+
+h3 {
+    margin-top: 0%;
 }
