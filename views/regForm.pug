@@ -1,4 +1,4 @@
- extends templete.pug 
+extends templete.pug 
 
 block css
     style 
@@ -7,4 +7,9 @@ block css
 
 block content 
     form(action="#", method="post") 
+        input#name(type="text", name="name" placeholder="Enter Your Name") 
+        input#name(type="tel", name="mobile" placeholder="Enter Your Mobile Number") 
+        input#name(type="email", name="email" placeholder="Enter Your E-mail I'd")
+        textarea#address(name="address", cols="30", rows="10" placeholder="Enter Your Addres") 
+        input#name(type="text", name="question" placeholder="Ask any Question that you would like us to address") 
         
