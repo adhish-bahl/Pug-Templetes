@@ -1,0 +1,14 @@
+.form input, .form textarea {
+    display: block;
+    width: 40vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 23vw;
+    border: black 1px solid;
+    padding: 30px;
+}
