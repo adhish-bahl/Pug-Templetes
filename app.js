@@ -15,6 +15,11 @@ app.get("/", (req, res) => {
     res.status(200).render("index.pug", param);
 });
 
+app.get("/register", (req, res) => {
+    let param = {title: "Register"};
+    res.status(200).render("regForm.pug", param);
+});
+
 // app.post("/register", (req, res) => {
 //     cuname = req.body.name;
 //     age = req.body.age;
