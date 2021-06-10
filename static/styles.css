@@ -95,3 +95,7 @@ section {
 .details ol {
     padding: 3px 300px;
 }
+
+.details p, .details li {
+    color: black;
+}
