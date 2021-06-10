@@ -28,8 +28,8 @@ section {
 .details::before {
     background-image: url(../static/dance3.jpg);
     background-size: cover;
-    opacity: .7;
-    z-index: -1;
+    opacity: .5;
+    z-index: -10;
     width: 100%;
     height: inherit;
     position: absolute;
@@ -76,5 +76,14 @@ section {
 .sty {
     color: white;
     margin: 0%;
-    list-style: none;
+    /* list-style: none; */
+}
+
+.details p, .details ol {
+    text-align: justify;
+    padding: 3px 200px
+}
+
+.details ol {
+    padding: 3px 300px;
 }
