@@ -1,6 +1,7 @@
-.{
+* {
     outline: none;
-    border: black 1px solid;
+    box-sizing: border-box;
+    /* border: black 1px solid; */
 }
 
 .form input, .form textarea {

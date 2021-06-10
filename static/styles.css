@@ -1,5 +1,6 @@
-. {
-    box-sizing: border-box;
+* {
+    box-sizing: content-box;
+    overflow-x: hidden;
 }
 
 section {
@@ -98,4 +99,8 @@ section {
 
 .details p, .details li {
     color: black;
+}
+
+.details {
+    height: 530px;
 }
