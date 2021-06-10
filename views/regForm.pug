@@ -9,10 +9,10 @@ block content
     h1 Fill in your details for Registration! 
     h3 We make sure that Our team calls you in next 24 working hours.
     form.form(action="/register", method="post") 
-        input#name(type="text", name="name" placeholder="Enter Your Name") 
-        input#name(type="tel", name="mobile" placeholder="Enter Your Mobile Number") 
-        input#name(type="email", name="email" placeholder="Enter Your E-mail I'd")
-        textarea#address(name="address", cols="30", rows="10") Enter Your Address
-        input#name(type="text", name="question" placeholder="Ask any Question that you would like us to address") 
+        input#name(type="text", name="name" required placeholder="Enter Your Name") 
+        input#mobile(type="tel", name="mobile" required placeholder="Enter Your Mobile Number") 
+        input#email(type="email", name="email" placeholder="Enter Your E-mail I'd")
+        textarea#address(name="address", cols="30", required rows="10") Enter Your Address
+        input#question(type="text", name="question" placeholder="Ask any Question that you would like us to address") 
         button(type="submit") Register
         
