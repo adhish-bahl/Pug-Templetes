@@ -20,16 +20,15 @@ app.get("/register", (req, res) => {
     res.status(200).render("regForm.pug", param);
 });
 
-app.post("/submit", (req, res) => {
+app.post("/register", (req, res) => {
     cuname = req.body.name;
-    age = req.body.age;
-    gender = req.body.gender;
-    locality = req.body.locality;
-    email = req.body.email;
-    number = req.body.number;
-    let finalOutput = ` Name: ${cuname} \n Age: ${age}\n Gender: ${gender}\n Locality: ${locality}\n E-mail: ${email}\n Mobile Number: ${number}`;
-    fs.writeFileSync("output.txt", finalOutput);
-    res.status(200).render("index.pug");
+    number = req.body.mobile;
+    email = req.body.address;
+    address = req.body.locality;
+    question = req.body.question;
+    // let finalOutput = ` Name: ${cuname} \n Age: ${age}\n Gender: ${gender}\n Locality: ${locality}\n E-mail: ${email}\n Mobile Number: ${number}`;
+    // fs.writeFileSync("output.txt", finalOutput);
+    res.status(200).render("regform.pug");
 });
 
 app.listen(port, () => {
