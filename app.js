@@ -23,11 +23,11 @@ app.get("/register", (req, res) => {
 app.post("/register", (req, res) => {
     cuname = req.body.name;
     number = req.body.mobile;
-    email = req.body.address;
-    address = req.body.locality;
+    email = req.body.email;
+    address = req.body.address;
     question = req.body.question;
-    // let finalOutput = ` Name: ${cuname} \n Age: ${age}\n Gender: ${gender}\n Locality: ${locality}\n E-mail: ${email}\n Mobile Number: ${number}`;
-    // fs.writeFileSync("output.txt", finalOutput);
+    let finalOutput = ` Name: ${cuname} \n Address: ${address}\n E-mail: ${email}\n Mobile Number: ${number} \n Question: ${question}`;
+    fs.writeFileSync("output.txt", finalOutput);
     res.status(200).render("regform.pug");
 });
 
