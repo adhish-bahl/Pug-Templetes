@@ -27,7 +27,7 @@ const dancerSchema = new mongoose.Schema({
     question: String
   });
 
-  const Dancer = mongoose.model('Kitten', dancerSchema);
+  const Dancer = mongoose.model('Dancer', dancerSchema);
 
 app.get("/", (req, res) => {
     let param = {title: "Home"};
@@ -40,24 +40,32 @@ app.get("/register", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-    cuname = req.body.name;
+    /*cuname = req.body.name;
     number = req.body.mobile;
     email = req.body.email;
     address = req.body.address;
     question = req.body.question;
     let finalOutput = ` Name: ${cuname} \n Address: ${address}\n E-mail: ${email}\n Mobile Number: ${number} \n Question: ${question}`;
     fs.writeFileSync("output.txt", finalOutput);
-    res.status(200).render("regform.pug");
+    res.status(200).render("regform.pug");*/
+
+    var myData = new Dancer(req.body);
+    myData.save().then(()=>{
+        res.send("Data saved!");
+    }).catch(()=>{
+        res.status(400).send("not saved");
+    });
 });
 
 app.listen(port, () => {
     console.log(`Server has been started at port ${port}`);
-})
+});
 
-const silence = new Dancer({ name: ${cuname}, number: ${number}, email: ${email}, address: ${address}, question: ${questtion}});
 
-silence.save(function (err, silence) {
-    if (err) 
-        return console.error(err);
-    // silence.speak();
-  });
+// const silence = new Dancer({ name: ${cuname}, number: ${number}, email: ${email}, address: ${address}, question: ${questtion}});
+
+// silence.save(function (err, silence) {
+//     if (err) 
+//         return console.error(err);
+//     // silence.speak();
+//   });
