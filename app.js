@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const fs = require("fs");
 const mongoose = require("mongoose");
+const bodyparser = require("body-parser");
 const port = 80;
 
 app.use("/static", express.static("static"));
@@ -18,7 +19,7 @@ db.once('open', function() {
   console.log("We are connected sucessfully!");
 });
 
-const kittySchema = new mongoose.Schema({
+const dancerSchema = new mongoose.Schema({
     name: String,
     number: Number,
     email: String,
@@ -26,7 +27,7 @@ const kittySchema = new mongoose.Schema({
     question: String
   });
 
-  const Kitten = mongoose.model('Kitten', kittySchema);
+  const Dancer = mongoose.model('Kitten', dancerSchema);
 
 app.get("/", (req, res) => {
     let param = {title: "Home"};
@@ -53,10 +54,10 @@ app.listen(port, () => {
     console.log(`Server has been started at port ${port}`);
 })
 
-const silence = new Kitten({ name: ${cuname}, number: ${number}, email: ${email}, address: ${address}, question: ${questtion}});
+const silence = new Dancer({ name: ${cuname}, number: ${number}, email: ${email}, address: ${address}, question: ${questtion}});
 
 silence.save(function (err, silence) {
     if (err) 
         return console.error(err);
-    // fluffy.speak();
+    // silence.speak();
   });
