@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const fs = require("fs");
+const mongoose = require("mongoose");
 const port = 80;
 
 app.use("/static", express.static("static"));
@@ -9,6 +10,23 @@ app.use(express.urlencoded());
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
+
+const db = mongoose.connection;
+mongoose.connect('mongodb://localhost/adhish_dance', {useNewUrlParser: true, useUnifiedTopology: true});
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("We are connected sucessfully!");
+});
+
+const kittySchema = new mongoose.Schema({
+    name: String,
+    number: Number,
+    email: String,
+    address: String,
+    question: String
+  });
+
+  const Kitten = mongoose.model('Kitten', kittySchema);
 
 app.get("/", (req, res) => {
     let param = {title: "Home"};
@@ -34,3 +52,11 @@ app.post("/register", (req, res) => {
 app.listen(port, () => {
     console.log(`Server has been started at port ${port}`);
 })
+
+const silence = new Kitten({ name: ${cuname}, number: ${number}, email: ${email}, address: ${address}, question: ${questtion}});
+
+silence.save(function (err, silence) {
+    if (err) 
+        return console.error(err);
+    // fluffy.speak();
+  });
