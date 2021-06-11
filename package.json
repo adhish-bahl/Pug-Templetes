@@ -18,6 +18,7 @@
   "homepage": "https://github.com/adhish-bahl/Pug-Templetes#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.12.13",
     "pug": "^3.0.2"
   }
 }
