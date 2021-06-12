@@ -50,9 +50,12 @@
 }
 
 .ssicon {
-    display: inline-block;
-    width: 50px;
+    width: 55px;
     padding: 10px;
+}
+
+.footer div a {
+    display: inline-block;
 }
 
 .footer div, .footer p {
