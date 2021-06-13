@@ -9,7 +9,7 @@
 
 
 .navigation {
-    background-color: rgb(171, 171, 218);
+    background-color: rgb(65 65 114);
     height: 75px;
     font-size: 1.5rem;
 }
@@ -39,7 +39,7 @@
 }
 
 .footer {
-    background-color: rgb(171, 171, 218);
+    background-color: rgb(65 65 114);
     height: max-content;
     text-align: center;
     display: flex;
