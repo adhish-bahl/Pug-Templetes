@@ -11,8 +11,6 @@ section {
 .gallery {
     background-image: url("/static/dance.jpg");
     background-size: cover;
-    /* opacity: .5; */
-    /* background: "dance.jpg" cover/center center; */
     display: flex;
     justify-content: center;
     align-items: center;
