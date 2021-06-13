@@ -51,9 +51,9 @@ app.post("/register", (req, res) => {
 
     var myData = new Dancer(req.body);
     myData.save().then(()=>{
-        res.send(prompt("Registered sucessfully!"));
+        res.status(400).send("Registered sucessfully!");
     }).catch(()=>{
-        res.status(400).send(prompt("Oops, we encountered an error, Please try in few minutes!"));
+        res.status(400).send("Oops, we encountered an error, Please try in few minutes!");
     });
 });
 
